@@ -32,10 +32,6 @@ function App() {
           <div id = "home" className="min-h-screen flex flex-col lg:flex-row justify-between items-center lg:px-32 px-5 pt-24 lg:pt-16 gap-5">
             <Home/>
           </div>
-          
-          <div id = "home" className="min-h-screen flex flex-col lg:flex-row justify-between items-center lg:px-32 px-5 pt-24 lg:pt-16 gap-5">
-            <Home/>
-          </div>
         </main>
       </div>
     </>

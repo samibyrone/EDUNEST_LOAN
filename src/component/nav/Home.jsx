@@ -1,20 +1,30 @@
 import React from "react";
 import Button from "../layout/Button.jsx";
+import loan from "../../assets/images/illustartion.png";
 
 const Home = () => {
     return (
-        <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 text-black bg-[url('assets/img/home.png')] bg-no-repeat bg-cover opacity-90">
-            <div className=" w-full lg:w-4/5 space-y-5 mt-10">
-                <h1 className="text-5xl font-bold leading-tight">
-                    Empowering Health Choices for a Vibrant Life Your Trusted..
-                </h1>
-                <p>
-                    Welcome to MedVault, where we revolutionize the way medical records are stored
-                    and accessed. Our platform ensures seamless, secure, and efficient management
-                    of patient records, empowering healthcare providers and patients alike.
-                </p>
+        <div className=" ml-40 px-5 bg-no-repeat bg-cover opacity-90">
+            <div className="flex text-center gap-12 mt-10">
+                <div className="flex flex-col justify-center items-center text-center">
+                    <h1 className="home text-5xl font-bold leading-tight">
+                       Quick and Easy Loans for Your Financial Needs.
+                    </h1>
+                    <p className="homeP text-2xl font-semibold">
+                        Our loan services offer a hassle-free and streamlined borrowing experience
+                        for students. We understand that financial needs can arise unexpectedly, and
+                        our goal is to provide you providing you with the funds you need in a timely
+                        manner to meet your financial requirements.
+                    </p>
+                    <button className="button11">
+                        Get Started
+                    </button>
+                </div> 
+                
+                <div className="home-img mt-20">
+                    <img src={loan} alt="loan illustration" />
+                </div>
 
-                <Button title="See Services" />
             </div>
         </div>
     );

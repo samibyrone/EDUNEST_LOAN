@@ -1,31 +1,37 @@
 import React from "react";
-// import img from "../assets/img/about.jpg";
+import about from "../../assets/images/Table.png";
 
 const About = () => {
     return (
-        <div className=" min-h-screen flex flex-col lg:flex-row justify-between items-center lg:px-32 px-5 pt-24 lg:pt-16 gap-5">
-            <div className=" w-full lg:w-3/4 space-y-4">
-                <h1 className=" text-4xl font-semibold text-center lg:text-start">About Us</h1>
-                <p className=" text-justify lg:text-start">At MedVault, we are dedicated to transforming
-                    healthcare through innovative digital record-keeping solutions.
-                    Our mission is to provide secure, efficient, and user-friendly access to medical
-                    records while ensuring compliance with the highest security standards.
-                </p>
-                <p className="text-justify lg:text-start">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quia
-                    suscipit illum, numquam incidunt nostrum dolor officia doloremque
-                    cupiditate, placeat explicabo sed iure atque neque quidem ipsam!
-                    Dolor, minus reiciendis.
-                </p>
-                <p className="text-justify lg:text-start">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, illum.
-                    Accusantium ab expedita veniam nobis aut, in rerum repellendus!
-                    Exercitationem libero recusandae corrupti accusantium reiciendis in
-                    placeat illo maxime ea.
-                </p>
+        <div className=" flex6">
+            <div className="about">
+                <p className="aboutP">About us</p>
+                <div className="about1">
+                    <img src={about} alt="about design" className="aboutDesign"/>
+                    <h1 className="aboutH1">
+                        Edunest. Your trusted financial partner for loans. 
+                        Quick approvals, competitive rates, and personalized 
+                        solutions to meet your unique needs. Empowering you to 
+                        achieve your financial goals. Apply online today!
+                    </h1>
+                </div>
             </div>
-            <div className=" w-full lg:w-3/4">
-                {/*<img className=" rounded-lg" src={img} alt="img" />*/}
+            <div className="about2">
+                <div className="first">
+                    <p className="name">Your Name</p>
+                    <input type="text" placeholder="Full name"  className="holder"/>
+                </div>
+                <div className="first">
+                    <p className="name">Phone Number</p>
+                    <input type="text" placeholder="Number" className="holder" />
+                </div>
+                <div className="first">
+                    <p className="name">Email Address</p>
+                    <input type="text" placeholder="Email" className="holder" />
+                </div>
+                 <button className="button22">
+                    SEND
+                </button>
             </div>
         </div>
     );
